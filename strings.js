@@ -144,29 +144,46 @@ function encrypt(str) {
 
     for (let i = 0; i < str.length; i++) {
 
-        if( str[i] != "a" && 
-            str[i] != "e" && 
-            str[i] != "i" && 
-            str[i] != "o" && 
-            str[i] != "u" && 
-            str[i] != "å" && 
-            str[i] != "ä" && 
-            str[i] != "ö" && 
-            str[i] != "y" &&
-            str[i] != "A" && 
-            str[i] != "E" && 
-            str[i] != "I" && 
-            str[i] != "O" && 
-            str[i] != "U" && 
-            str[i] != "Å" && 
-            str[i] != "Ä" && 
-            str[i] != "Ö" && 
-            str[i] != "Y" &&
-            str[i] != "!" &&
-            str[i] != "?" &&
-            str[i] != "." &&
-            str[i] != "," &&
-            str[i] != " "    ) {
+        if( str[i] == "q" && 
+            str[i] == "w" && 
+            str[i] == "r" && 
+            str[i] == "t" && 
+            str[i] == "p" && 
+            str[i] == "s" && 
+            str[i] == "d" && 
+            str[i] == "f" && 
+            str[i] == "g" &&
+            str[i] == "h" && 
+            str[i] == "j" && 
+            str[i] == "k" && 
+            str[i] == "l" && 
+            str[i] == "z" && 
+            str[i] == "x" && 
+            str[i] == "c" && 
+            str[i] == "v" && 
+            str[i] == "b" &&
+            str[i] == "n" &&
+            str[i] == "m" &&
+            str[i] == "Q" && 
+            str[i] == "W" && 
+            str[i] == "R" && 
+            str[i] == "T" && 
+            str[i] == "P" && 
+            str[i] == "S" && 
+            str[i] == "D" && 
+            str[i] == "F" && 
+            str[i] == "G" &&
+            str[i] == "H" && 
+            str[i] == "J" && 
+            str[i] == "K" && 
+            str[i] == "L" && 
+            str[i] == "Z" && 
+            str[i] == "X" && 
+            str[i] == "C" && 
+            str[i] == "V" && 
+            str[i] == "B" &&
+            str[i] == "N" &&
+            str[i] == "M" &&) {
             
             result += str[i];
             result += "o";
@@ -175,11 +192,11 @@ function encrypt(str) {
             result += str[i];
         }
     }
-
     return result;
+}
 
-
-
+function decrypt(stringToDectrypt) {
+    
 }
 
 
@@ -189,8 +206,7 @@ console.log(reverse("Hello World!"))
 console.log(removeChar("Hello World!", "o"))
 console.log(replaceChar("Hello World!", "o", "y"))
 console.log(substring("Hello World!", 1, 4))
-console.log(substring("Hello World!", 1, 4))
-console.log(contains("Hello World!", "ll"))
-console.log(remove("Hello World!", "ll"))
+console.log(contains("Hello World!", "Hl"))
+console.log(remove("Hello World!", "!"))
 console.log(replace("Hello World!", "orld!", "   "))
 console.log(encrypt("Yello world!"))
